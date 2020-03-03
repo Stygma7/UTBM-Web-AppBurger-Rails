@@ -39,7 +39,7 @@ group :development, :test do
   gem 'selenium-webdriver', '~> 3.142.7'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~>  1.3.6'
-  gem 'rubyzip', '~> 1.2.2'
+  gem 'rubyzip', '~> 1.3.0'
 end
 
 group :development do
