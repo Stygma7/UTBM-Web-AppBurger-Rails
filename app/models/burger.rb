@@ -5,7 +5,7 @@ class Burger < ApplicationRecord
         product = Openfoodfacts::Product.get(code, locale: 'fr')
 
         if product == nil
-            product = [["rien"], ["toujours rien"]]
+            product = ["NO_DATA"]
         else
             product = product.nutriments
         end
