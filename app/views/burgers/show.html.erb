@@ -25,5 +25,27 @@
   <%= @burger.code %>
 </p>
 
+<p>
 <%= link_to 'Edit', edit_burger_path(@burger) %> |
 <%= link_to 'Back', burgers_path %>
+</p>
+
+<p>
+<table border="1">
+  <thead>
+    <tr> 
+      <th>Nutriment</th>
+      <th>Valeur</th>
+    </tr> 
+  </thead>
+
+  <tbody> 
+  <% @burger.nutriments.each do |nutriment| %>
+    <tr> 
+      <td><%= nutriment[0] %></td>
+      <td><%= nutriment[1] %></td>
+    </tr> 
+  <%end %>
+  </tbody>
+</table>
+</p>
